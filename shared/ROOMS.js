@@ -1,6 +1,6 @@
-import karaoke from '../assets/img/karaoke.jpg';
-import dndRoom from '../assets/img/dndroom.jpg';
-import vrSandbox from '../assets/img/vrsandbox.jpg'
+// import karaoke from '../assets/img/karaoke.jpg';
+// import dndRoom from '../assets/img/dndroom.jpg';
+// import vrSandbox from '../assets/img/vrsandbox.jpg'
 
 
 export const ROOMS = [

@@ -1,8 +1,8 @@
-import tavernParty from '../assets/img/event1.jpg';
-import dance from '../assets/img/dance.jpg';
-import drinkDragon from '../assets/img/drinkDrag.jpg';
-import raceTourney from '../assets/img/race.jpg';
-import retro from '../assets/img/retro.png';
+// import tavernParty from '../assets/img/event1.jpg';
+// import dance from '../assets/img/dance.jpg';
+// import drinkDragon from '../assets/img/drinkDrag.jpg';
+// import raceTourney from '../assets/img/race.jpg';
+// import retro from '../assets/img/retro.png';
 
 export const EVENTS = [
     {

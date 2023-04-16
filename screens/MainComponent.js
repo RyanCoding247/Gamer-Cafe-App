@@ -8,7 +8,7 @@ import { Icon, Avatar } from 'react-native-elements';
 import GamesScreen from "./GamesScreen";
 import EventsScreen from "./EventsScreen";
 import RoomsScreen from "./RoomsScreen";
-import StoreScreen from "./StoreScreen";
+// import StoreScreen from "./StoreScreen";
 import { fetchMenu } from "../features/menu/menuSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
@@ -18,7 +18,7 @@ import { fetchStore } from "../features/store/storeSlice";
 import { fetchRooms } from "../features/rooms/roomsSlice";
 import EventInfoScreen from "../features/events/EventInfoScreen";
 import RoomInfoScreen from "../features/rooms/RoomInfoScreen";
-import { baseUrl } from "../shared/baseUrl";
+import { baseImageUrl } from "../shared/baseUrl";
 
 
 const Drawer = createDrawerNavigator();
@@ -43,7 +43,7 @@ const HomeNavigator = () => {
                     headerLeft: () => (
                         <Avatar
                             title='home'
-                            source={{ uri: baseUrl + 'images/gamerlogo.jpeg' }}
+                            source={{ uri: baseImageUrl + 'gamerlogo.jpeg' }}
                             rounded
                             onPress={() => navigation.toggleDrawer()}
                         />

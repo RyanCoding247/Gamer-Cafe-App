@@ -1,7 +1,7 @@
-import drinkDrag from '../assets/img/drinkDrag.jpg';
-import gamer from '../assets/img/gamerlogo.jpg';
-import dance from '../assets/img/dance.jpg';
-import pacman from '../assets/img/pacman.jpg';
+// import drinkDrag from '../assets/img/drinkDrag.jpg';
+// import gamer from '../assets/img/gamerlogo.jpg';
+// import dance from '../assets/img/dance.jpg';
+// import pacman from '../assets/img/pacman.jpg';
 
 
 

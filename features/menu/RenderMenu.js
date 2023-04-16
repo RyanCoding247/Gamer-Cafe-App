@@ -3,7 +3,7 @@ import { Avatar, Button, ListItem } from "react-native-elements";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useFonts, BubblegumSans_400Regular } from "@expo-google-fonts/bubblegum-sans";
-import { baseUrl } from "../../shared/baseUrl";
+import { baseImageUrl } from "../../shared/baseUrl";
 
 const MenuDisplay = () => {
 
@@ -170,7 +170,7 @@ const MenuDisplay = () => {
 
                             >
                                 <Avatar
-                                    source={{ uri: baseUrl + item.image }} size={50}
+                                    source={{ uri: baseImageUrl + item.image }} size={50}
                                 />
                                 <ListItem.Content style={styles.itemContent}>
                                     <ListItem.Title style={styles.itemName}>{item.name}</ListItem.Title>

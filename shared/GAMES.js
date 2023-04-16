@@ -1,15 +1,15 @@
-import donkeyJr from '../assets/img/dkjr.jpg';
-import marioKart from '../assets/img/mkart.jpg';
-import frogger from '../assets/img/frogger.jpg';
-import airHockey from '../assets/img/hockey.png';
-import skeeball from '../assets/img/skeeball.jpg';
-import racegame from '../assets/img/racegame.png';
-import pacman from '../assets/img/pacman.jpg';
-import vrcoaster from '../assets/img/vrcoaster.png';
-import vrgolf from '../assets/img/vrgolf.jpg';
-import starWars from '../assets/img/starwarspod.jpg';
-import streetfighter from '../assets/img/streetfighter.jpg';
-import injustice from '../assets/img/injustice.jpg';
+// import donkeyJr from '../assets/img/dkjr.jpg';
+// import marioKart from '../assets/img/mkart.jpg';
+// import frogger from '../assets/img/frogger.jpg';
+// import airHockey from '../assets/img/hockey.png';
+// import skeeball from '../assets/img/skeeball.jpg';
+// import racegame from '../assets/img/racegame.png';
+// import pacman from '../assets/img/pacman.jpg';
+// import vrcoaster from '../assets/img/vrcoaster.png';
+// import vrgolf from '../assets/img/vrgolf.jpg';
+// import starWars from '../assets/img/starwarspod.jpg';
+// import streetfighter from '../assets/img/streetfighter.jpg';
+// import injustice from '../assets/img/injustice.jpg';
 
 export const GAMES = [
     {
