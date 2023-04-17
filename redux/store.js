@@ -15,6 +15,7 @@ import { eventsReducer } from '../features/events/eventsSlice';
 import { gamesReducer } from '../features/games/gamesSlice';
 import { storeReducer } from '../features/store/storeSlice';
 import { roomsReducer } from '../features/rooms/roomsSlice';
+import { userReducer } from '../features/user/userSlice';
 
 const config = {
     key: 'root',
@@ -28,7 +29,8 @@ export const store = configureStore({
         events: eventsReducer,
         games: gamesReducer,
         store: storeReducer,
-        rooms: roomsReducer
+        rooms: roomsReducer,
+        users: userReducer
     }),
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({

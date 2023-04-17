@@ -1,7 +1,7 @@
 import { ImageBackground } from "react-native";
 import { Text, View, TextInput, StyleSheet, ScrollView, Modal } from "react-native";
 import { Button, Card, Input, ListItem } from "react-native-elements";
-import { baseImageUrl } from "../../shared/baseUrl";
+import { baseUrl } from "../../shared/baseUrl";
 import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Formik } from "formik";
@@ -41,7 +41,7 @@ const RoomInfoScreen = ({ route }) => {
     return (
         <View>
             <ImageBackground
-                source={{ uri: baseImageUrl + 'backgrounds/roomsbg.JPEG' }}
+                source={{ uri: baseUrl + 'images/roomsbg.JPEG' }}
                 resizeMode="cover"
                 style={{ height: '100%' }}
             >
@@ -53,7 +53,7 @@ const RoomInfoScreen = ({ route }) => {
                             style={{ fontSize: 24 }}
                         >{item.name}</Card.Title>
                         <Card.Image
-                            source={{ uri: baseImageUrl + item.image }}
+                            source={{ uri: baseUrl + item.image }}
                             style={styles.image}
                         />
                         <Text style={styles.text} >{item.content}</Text>

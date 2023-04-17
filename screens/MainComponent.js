@@ -8,6 +8,7 @@ import { Icon, Avatar } from 'react-native-elements';
 import GamesScreen from "./GamesScreen";
 import EventsScreen from "./EventsScreen";
 import RoomsScreen from "./RoomsScreen";
+import LoginScreen from './LoginScreen';
 // import StoreScreen from "./StoreScreen";
 import { fetchMenu } from "../features/menu/menuSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -19,6 +20,7 @@ import { fetchRooms } from "../features/rooms/roomsSlice";
 import EventInfoScreen from "../features/events/EventInfoScreen";
 import RoomInfoScreen from "../features/rooms/RoomInfoScreen";
 import { baseImageUrl } from "../shared/baseUrl";
+import { getFocusedRouteNameFromRoute } from '@react-navigation/core';
 
 
 const Drawer = createDrawerNavigator();
@@ -198,6 +200,35 @@ const EventsNavigator = () => {
     )
 }
 
+const LoginNavigator = () => {
+    const Stack = createStackNavigator();
+    return (
+        <Stack.Navigator screenOptions={screenOptions}>
+            <Stack.Screen
+                name='Login'
+                component={LoginScreen}
+                options={({ navigation, route }) => ({
+                    headerTitle: getFocusedRouteNameFromRoute(route),
+                    headerLeft: () => (
+                        <Icon
+                            name={
+                                getFocusedRouteNameFromRoute(route) ===
+                                    'Register'
+                                    ? 'user-plus'
+                                    : 'sign-in'
+                            }
+                            type='font-awesome'
+                            iconStyle={styles.stackIcon}
+                            onPress={() => navigation.toggleDrawer()}
+                        />
+                    )
+                })}
+            />
+        </Stack.Navigator>
+    );
+};
+
+
 
 
 
@@ -321,6 +352,21 @@ const Main = () => {
                         )
                     }}
                 /> */}
+                <Drawer.Screen
+                    name='Login'
+                    component={LoginNavigator}
+                    options={{
+                        drawerIcon: ({ color }) => (
+                            <Icon
+                                name='sign-in'
+                                type='font-awesome'
+                                size={24}
+                                iconStyle={{ width: 24 }}
+                                color={color}
+                            />
+                        )
+                    }}
+                />
             </Drawer.Navigator>
         </View>
 
